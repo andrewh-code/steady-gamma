@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- for mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- import css and js -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+
+
+    <body>
+        
+            <h1>hello world</h1>
+
+            <div class="container" style="border:1pm solid #18BC9C;">
+                <!-- login form  -->
+                <div class="col-5">
+                    <div>
+                        <label>username</label>
+                    </div>
+                    <div>
+                        <input type="text" id="username" name="username" placeholder="username">
+                    </div>
+                    <div>
+                        <label>password</label>
+                    </div>
+                    <div>
+                        <input type="password" id="password" name="password" placeholder="password">
+                    </div>
+                    <div id="loginError"></div>
+                    <div id="registerSuccess"></div>
+                    <div></div>
+                    <div class="row">
+                        <div class="col"><button type="submit" id="logIn" class="btn btn-primary">Log in</button></div>
+                        <div class="col"><button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">New User</button></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><button type="submit" id="protectedRoute" class="btn btn-success">Protected route</button></div>
+                    </div>
+                </div>
+                        
+            </div>
+            
+            <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="registerModalLabel">Register new User</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <div>
+                            <label>first name</label>
+                        </div>
+                        <div>
+                            <input type="text" id="newFirstName" name="newFirstName" placeholder="first name">
+                        </div>
+                        <div>
+                            <label>last name</label>
+                        </div>
+                        <div>
+                            <input type="text" id="newLastName" name="newLastName" placeholder="last name">
+                        </div>
+                        <div>
+                            <label>New Username</label>
+                        </div> -->
+                        <div>
+                            <input type="text" id="newusername" name="newusername" placeholder="username">
+                        </div>
+                        <div>
+                            <label>password</label>
+                        </div>
+                        <div>
+                            <input type="password" id="newpassword" name="newpassword" placeholder="password">
+                        </div>
+                        <div>
+                            <label>email</label>
+                        </div>
+                        <!-- <div>
+                            <input type="text" id="email" name="email" placeholder="email">
+                        </div> -->
+                        <div id="registerError"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-primary" id="Register">Register</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>            
+            
+        
+        
+        
+            <!-- <script>
+                var modal = document.getElementById('registerModal')
+    
+                // close modal
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        mopdal.style.display = "none";
+                    }
+                }
+            </script> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="javascript/client.js"></script>
+        
+
+    </body>
+
+</html>

@@ -1,0 +1,5 @@
+{
+    "port": 1234,
+    "JWT_SECRET_KEY": "MY_SECRET_KEY",
+    "JWT_EXPIRY" : 2592000
+}

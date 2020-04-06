@@ -1,0 +1,12 @@
+body {
+    background-image: url();
+    background-color: #ffffff;
+}
+
+#loginError, #registerError {
+    color: #ff0000;
+}
+
+#registerSuccess {
+    color: #08B00B;
+}
